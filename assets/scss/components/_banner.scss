@@ -1,0 +1,74 @@
+.banner{
+    background-color: $da;
+    position: relative;
+    max-height: 500px;
+    overflow: hidden;
+    .carousel{
+        @media only screen and (max-width:767px){
+            display: none;
+        }
+    }
+    .carousel-indicators{
+        @media only screen and (max-width:900px){
+            display: none;
+        }
+    }
+    .carousel-inner{
+        .carousel-item{
+            
+            img{
+               opacity:0.1;
+
+            }
+        }
+    }
+
+    .content{
+        position: absolute;
+        top:30%;
+        left:50%;
+        transform: translateX(-50%);
+        @media only screen and (max-width:1199px){
+            width:100%;
+        }
+        @media only screen and (max-width:767px){
+           position: unset;
+           transform:translateX(0%);
+           margin-top: 100px;
+           margin-bottom: 100px;
+        }
+        h5,h1{
+            color:$wh;
+            animation-name: fadeInLeft;
+            animation-duration: 1s;
+        }
+        p{
+            max-width: 600px;
+            color:$wh;
+            animation-name: fadeInRight;
+            animation-duration: 1s;
+            @media only screen and (max-width:1199px){
+              display:none;
+            }
+        }
+        .btnsec{
+            margin-top: 30px;
+            animation-name: fadeInRight;
+            animation-duration: 1s;
+        }
+        .btn1{
+            @include font2($la,400,1.4rem);
+            margin-left: 0.5rem;
+            margin-right: 1.5rem;
+            border-radius: 50px;
+            padding: 0.5rem 2rem;
+        }
+        .btn2{
+            margin-left: 1.5rem;
+            margin-right: 0.5rem;
+            @include font2($la,400,1.4rem);
+            border-radius: 50px;
+            padding: 0.5rem 2rem;
+        }
+    }
+}

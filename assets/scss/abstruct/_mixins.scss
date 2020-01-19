@@ -1,0 +1,18 @@
+@mixin font($nam,$we,$si,$col){
+   font-family: $nam;
+   font-weight: $we;
+   font-size:$si;
+   color:$col
+}
+@mixin font2($nam,$we,$si){
+   font-family: $nam;
+   font-weight: $we;
+   font-size:$si;
+}
+@mixin col($col){
+    color:$col;
+}
+@mixin  im {
+    width: 100%;
+    height: auto;
+}

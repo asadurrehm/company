@@ -1,0 +1,55 @@
+.top{
+    background-color: $da;
+    padding-top:1.5rem;
+    padding-bottom: 0.5rem;
+    i{
+        @include col($ga);
+        font-size: 1.4rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    h6{
+        display: inline-flex;
+        @include col($ga);
+    }
+    .cont{
+        margin-right: 2rem;
+        @media only screen and (max-width:767px){
+            display: block;
+            margin-top:1rem;
+
+        }
+    }
+}
+
+.topsoc{
+    float: right;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    @media only screen and (max-width:767px){
+        float: left;
+        margin-top: 1rem;
+    }
+    i{
+        font-size:1.4rem;
+        color:$ga;
+        
+        margin-right: 2rem;
+        &:hover{
+            color:#fff;
+        }
+    }
+}
+
+.search{
+    margin-top:1.4rem;
+    i{
+        font-size:1.4rem;
+    }
+}
+
+.menusec{
+   padding-top: 2.5rem;
+   padding-bottom: 2.5rem;
+   
+}

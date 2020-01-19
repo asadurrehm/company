@@ -1,0 +1,21 @@
+h1{
+    @include font($mon, 700, 6rem, $wh);
+}
+h2{
+    @include font2($mon,700, 3rem);
+}
+h3{
+    @include font2($mon,400, 3rem);
+}
+h4{
+    @include font2($mon,600, 2.4rem);
+}
+h5{
+    @include font2($mon,600, 2rem);
+}
+h6{
+    @include font2($mon,600, 1.4rem);
+}
+p{
+    @include font2($la, 400, 1.6rem);
+}

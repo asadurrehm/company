@@ -1,0 +1,29 @@
+.navbar{
+   .navbar-collapse{
+       justify-content: flex-end;
+   }
+    .navbar-nav{
+        .nav-item{
+            margin-right: 2rem;
+            &.active{
+                
+                .nav-link{
+                    color:$ge;
+                }
+            }
+            .nav-link{
+               @include font($mon, 600, 1.4rem, $da);
+               text-transform: uppercase;
+
+               &:hover{
+                   color:$ge;
+               }
+            }
+        }
+    }
+.navbar-toggler{
+    margin-left:90%;
+}
+    
+}
+
